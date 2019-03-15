@@ -1,0 +1,158 @@
+/* IMPORT
+ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700italic,700);
+
+/* RESET
+ */
+* {
+	font-family: "Open Sans";
+}
+body {
+	overflow-y: scroll;
+	background: #F5F5F5;
+}
+br {
+	clear: both;
+}
+a {
+	cursor: pointer;
+	color: rgba(0,0,0,0.5);
+}
+input,textarea {
+	border: 0;
+	padding: 0;
+}
+
+.main {
+	width: 900px;
+	position: relative;
+	margin: 80px auto 0 auto;
+}
+.main .logo {
+	width: 300px;
+	background: #FFF url(../images/logo.png) no-repeat center 75px;
+	background-size: 65%;
+}
+.main .container {
+	width: 600px;
+	background: #E2E2E2;
+	margin-bottom: 100px;
+}
+.main .logo, .main .container {
+	position: relative;
+	float: left;
+}
+.main .container .menu .button {
+	display: block;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	transition: 200ms all ease;
+	text-align: center;
+	font-size: 18px;
+	color: rgba(0,0,0,0.6);
+	max-height: 120px;
+}
+
+.main .container .load {
+	padding: 30px;
+	transition: 200ms all ease;
+}
+
+.main .container .title {
+	font-size: 22px;
+	color: rgba(0,0,0,0.8);
+	font-weight: bold;
+}
+.main .container .text {
+	font-size: 20px;
+	color: rgba(0,0,0,0.7);
+	font-weight: normal;
+}
+.main .container .title.center, .main .container .text.center {
+	text-align: center;
+}
+.main .container .title.left, .main .container .text.left {
+	text-align: left;
+}
+
+.intro .avatar {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 50px 0 -30px 20px;
+	border-radius: 100%;
+	background: url(../images/photo.jpeg);
+	background-size: cover;
+}
+.intro .info {
+	width: calc(100% - 250px);
+	float: right;
+	margin-top: 80px;
+	font-size: 13px;
+}
+.intro .info .each {
+	line-height: 20px;
+	color: rgba(0,0,0,0.7);
+}
+.intro .info .each .name {
+	width: calc(40% - 20px);
+	float: left;
+	text-align: right;
+	font-weight: bold;
+}
+.intro .info .each .icon {
+	width: 40px;
+	float: left;
+	line-height: 20px;
+	text-align: center;
+	color: rgba(0,0,0,0.4);
+}
+.intro .info .each .value {
+	width: calc(60% - 20px);
+	float: left;
+}
+
+#contact label {
+	display: inline-block;
+	line-height: 30px;
+}
+#contact input[type=text], #contact textarea, #contact input[type=button] {
+	border-radius: 3px;
+	outline: none;
+	transition: 200ms all ease;
+}
+#contact input[type=text], #contact textarea {
+	width: calc(100% - 16px);
+	background: #ccc;
+	padding: 0 8px;
+}
+#contact input[type=text]:hover, #contact textarea:hover {
+	background: #bbb;
+}
+#contact input[type=text]:focus, #contact textarea:focus {
+	box-shadow: inset 0 0 0 1px #aaa;
+}
+#contact input[type=text] {
+	height: 30px;
+}
+#contact textarea {
+	resize: vertical;
+	overflow-y: scroll;
+}
+#contact input[type=button] {
+	background: #fff;
+	cursor: pointer;
+	height: 30px;
+	padding:  0 8px;
+}
+#contact input[type=button]:hover {
+	box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+#contact input[type=button]:focus {
+	background: #ccc;
+	box-shadow: 0 0 0 0 transparent;
+}
+#contact #result {
+	margin-left: 20px;
+}
