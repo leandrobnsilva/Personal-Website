@@ -1,0 +1,26 @@
+1- Extraia o arquivo ISO.
+2- Execute o Etcher e selecione a imagem "arquivo 2017-09-07-raspbian-stretch.img" que foi extraída no passo anterior.
+3- Selecione o Cartão SD (drive) destino e inicie o processo clicando em Flash!
+4- Aguarde todo o processo de instalação de imagem e verificação finalizar. Pode levar vários minutos.
+5- Abra a particação "boot" do Cartão SD e crie um arquivo "ssh.txt" vazio (na própria raiz da partição "boot"!).
+6- Reomeie o arquivo "ssh.txt" para "ssh" . Isto é, remova sua extensão.
+7- Insira o Cartão SD no Raspberry PI, conecte-o via cabo ethernet no roteador e o alimente.
+8- Aguarde alguns instantes até que ele inicie (em geral, até que o seu LED verde pare de piscar muito frequentemente).
+9- Agora devemos saber o IP do Raspberry, exemplo: "192.168.0.3". Utilize o IPScan para isto.
+10- Sabendo o IP do Raspberry, rode o Putty.exe e digite este IP no campo indicado.
+11- Clique em Open.
+12- Caso o IP esteja correto, uma mensagem de segurança aparecerá. Clique em sim.
+13- Será pedido login e então a senha. Por padrão: login = "pi" e senha = "raspberry". Sem aspas.
+14- Pronto, login efetuado. O próximo passo é configurar o VNC, para vermos a interface do raspberry. Para isto, digite "sudo raspi-config".
+15- Selecione a opção "5 Interfacing Option", utilizando as setas do teclado e dê enter.
+16- Selecione a opção "P3 VNC" e dê enter.
+17- Selecione "<Yes>" para habilitar o VNC.
+18- Instale e execute o VNC-Viewer.
+19- Insira o endereço IP do Raspberry no campo indicado e dê enter.
+20- Pronto, podemos utilizar o Raspberry!
+
+Como passos adicionais (RECOMENDADO):
+21- Caso não queira mais ter que utilizar o cabo ethernet, o Raspberry PI 3 já possui WIFI. No canto superior direito clique no símbolo de WIFI e conecte na sua rede.
+22- Vá no menu iniciar do Raspberry (canto superior direito)->Preferences->Raspberry PI Configuration.
+23- Na aba System clique em "Set Resolution" e selecione uma resolução maior. Em geral, 1280x720 deve ser suficiente.
+24- Reinicie o Raspberry para ter efeito.
