@@ -63,9 +63,10 @@ input,textarea {
 	font-size: 22px;
 	color: rgba(0,0,0,0.8);
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 .main .container .text {
-	font-size: 20px;
+	font-size: 17px;
 	color: rgba(0,0,0,0.7);
 	font-weight: normal;
 }
@@ -89,7 +90,7 @@ input,textarea {
 	width: calc(100% - 250px);
 	float: right;
 	margin-top: 80px;
-	font-size: 13px;
+	font-size: 12px;
 }
 .intro .info .each {
 	line-height: 20px;
