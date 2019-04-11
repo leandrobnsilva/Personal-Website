@@ -23,10 +23,5 @@
 			<div class="icon fa fa fa-envelope"></div>
 			<div class="value">contato@leandro.xyz</div>
 		</div>
-		<div class="each">
-			<div class="name">Email</div>
-			<div class="icon fa fa fa-envelope"></div>
-			<div class="value">contato@leandro.xyz</div>
-		</div>
 	</div>
 </div>
